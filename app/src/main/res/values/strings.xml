@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aplikasi</string>
+    <string name="text_with_colored_word">"Belum memiliki nomor Tri? Beli SIM Card"<font color="#FF4500"> "di sini"</font></string>
+    <string-array name="operations">
+        <item>Penjumlahan</item>
+        <item>Pengurangan</item>
+        <item>Perkalian</item>
+        <item>Pembagian</item>
+    </string-array>
+    <string name="text">"Silahkan beri rating melalui link <font color="blue"> "www.hitungyuk.com"</font></string>
+    <string name="textLog">"Dengan login anda menyetujui \nsemua <font color="blue"> "syarat dan ketentuan "</font>"kami"</string>
+</resources>

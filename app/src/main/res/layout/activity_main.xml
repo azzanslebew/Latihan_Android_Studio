@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:fontFamily="@font/satoshiblack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        android:layout_marginTop="45dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk ke dalam bima+ dengan nomor Tri atau\n alamat emailmu yang sudah terdaftar."
+        android:fontFamily="@font/satoshiregular"
+        app:layout_constraintTop_toBottomOf="@id/masuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textmasuk"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Tri atau Alamat Email"
+        android:textStyle="bold"
+        android:id="@+id/Tri"
+        app:layout_constraintTop_toBottomOf="@id/textmasuk"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="13dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="170dp"
+        android:fontFamily="@font/satoshiregular"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNomor"
+        android:hint="Masukkan nomor Tri atau email kamu"
+        app:layout_constraintTop_toBottomOf="@id/Tri"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/satoshiregular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atau masuk dengan"
+        android:fontFamily="@font/satoshi"
+        app:layout_constraintTop_toBottomOf="@id/txtNomor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:id="@+id/atau"/>
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/googlewhite"
+        app:layout_constraintTop_toBottomOf="@id/atau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="150dp"
+        app:circularflow_radiusInDP="20dp"/>
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintTop_toBottomOf="@id/atau"
+        app:layout_constraintStart_toEndOf="@id/google"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"/>
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintTop_toBottomOf="@id/atau"
+        app:layout_constraintStart_toEndOf="@id/facebook"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/belidisini"
+        android:backgroundTint="#ff4500"
+        android:text="Masuk"
+        android:fontFamily="@font/satoshiblack"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/btnMasuk"/>
+
+    <TextView
+        android:id="@+id/belidisini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/satoshi"
+        android:text="@string/text_with_colored_word"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
